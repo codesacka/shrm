@@ -1,0 +1,497 @@
+@extends('template.dashboard.layouts')
+
+@section('content')
+
+
+
+    	<!-- Section: intro -->
+    <section id="intro" class="intro" >
+
+		<div class="intro-content" >
+
+
+
+			<div class="container custom-container">
+                                      @permission('admin-dashboard')
+				<div class="row">
+					<div class="col-md-4 profile" style='font-size: 15px;'>
+
+						<div class="well well-trans">
+						<div class="wow fadeInRight" data-wow-delay="0.1s">
+
+                                                	<div class="profile-userpic">
+					           <img src="{{ URL::asset('assets/img/dummy/img-1.png') }}" class="img-responsive" alt="">
+				                  </div>
+
+						<ul class="lead-list">
+							<li> &nbsp;</li>
+
+						</ul>
+						<p class=" wow bounceIn" data-wow-delay="0.4s">
+						<a href="#" class="btn btn-skin btn-lg">Request Time off <i class="fa fa-calendar"></i></a>
+						</p>
+
+
+
+
+
+
+								<div class="panel panel-profile no-bg ">
+									<div class="panel-heading overflow-h">
+										<h2 class="panel-title heading-sm pull-left"><i class="fa fa-pencil"></i>Notes</h2>
+										<a href="#"><i class="fa fa-cog pull-right"></i></a>
+									</div>
+									<div id="scrollbar" class="panel-body no-padding CustomScrollbar " data-mcs-theme="minimal-dark">
+										<div class="profile-post color-one">
+											<span class="profile-post-numb">01</span>
+											<div class="profile-post-in">
+												<h3 class="heading-xs"><a href="#">Creative Blog</a></h3>
+												<p>How to market yourself as a freelance designer</p>
+											</div>
+										</div>
+										<div class="profile-post color-two">
+											<span class="profile-post-numb">02</span>
+											<div class="profile-post-in">
+												<h3 class="heading-xs"><a href="#">Codrops Collective #117</a></h3>
+												<p>Web Design &amp; Development News</p>
+											</div>
+										</div>
+										<div class="profile-post color-three">
+											<span class="profile-post-numb">03</span>
+											<div class="profile-post-in">
+												<h3 class="heading-xs"><a href="#">Sketch Toolbox</a></h3>
+												<p>Basic prototype of a package manager for Sketch</p>
+											</div>
+										</div>
+										<div class="profile-post color-four">
+											<span class="profile-post-numb">04</span>
+											<div class="profile-post-in">
+												<h3 class="heading-xs"><a href="#">Amazing Portfolio</a></h3>
+												<p>Create a free online portfolio lookbook with Readz</p>
+											</div>
+										</div>
+										<div class="profile-post color-five">
+											<span class="profile-post-numb">05</span>
+											<div class="profile-post-in">
+												<h3 class="heading-xs"><a href="#">Discover New Features</a></h3>
+												<p>More than 100+ amazing add-ons coming soon...</p>
+											</div>
+										</div>
+										<div class="profile-post color-six">
+											<span class="profile-post-numb">06</span>
+											<div class="profile-post-in">
+												<h3 class="heading-xs"><a href="#">Corporation Plans</a></h3>
+												<p>Discussion of new corporation plans</p>
+											</div>
+										</div>
+										<div class="profile-post color-seven">
+											<span class="profile-post-numb">07</span>
+											<div class="profile-post-in">
+												<h3 class="heading-xs"><a href="#">Project Updates</a></h3>
+												<p>New features of coming update</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="panel panel-profile no-bg">
+									<div class="panel-heading overflow-h">
+										<h2 class="panel-title heading-sm pull-left"><i class="fa fa-briefcase"></i>Upcoming Events</h2>
+										<a href="#"><i class="fa fa-cog pull-right"></i></a>
+									</div>
+									<div id="scrollbar2" class="panel-body no-padding CustomScrollbar" data-mcs-theme="minimal-dark">
+										<div class="profile-event">
+											<div class="date-formats">
+												<span>25</span>
+												<small>05, 2014</small>
+											</div>
+											<div class="overflow-h">
+												<h3 class="heading-xs"><a href="#">GitHub seminars in Japan.</a></h3>
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing.</p>
+											</div>
+										</div>
+										<div class="profile-event">
+											<div class="date-formats">
+												<span>31</span>
+												<small>06, 2014</small>
+											</div>
+											<div class="overflow-h">
+												<h3 class="heading-xs"><a href="#">Bootstrap Update</a></h3>
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing.</p>
+											</div>
+										</div>
+										<div class="profile-event">
+											<div class="date-formats">
+												<span>07</span>
+												<small>08, 2014</small>
+											</div>
+											<div class="overflow-h">
+												<h3 class="heading-xs"><a href="#">Apple Conference</a></h3>
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing.</p>
+											</div>
+										</div>
+										<div class="profile-event">
+											<div class="date-formats">
+												<span>22</span>
+												<small>10, 2014</small>
+											</div>
+											<div class="overflow-h">
+												<h3 class="heading-xs"><a href="#">Backend Meeting</a></h3>
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing.</p>
+											</div>
+										</div>
+										<div class="profile-event">
+											<div class="date-formats">
+												<span>14</span>
+												<small>11, 2014</small>
+											</div>
+											<div class="overflow-h">
+												<h3 class="heading-xs"><a href="#">Google Conference</a></h3>
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing.</p>
+											</div>
+										</div>
+										<div class="profile-event">
+											<div class="date-formats">
+												<span>05</span>
+												<small>12, 2014</small>
+											</div>
+											<div class="overflow-h">
+												<h3 class="heading-xs"><a href="#">FontAwesome Update</a></h3>
+												<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry printing.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+					<div class="panel-heading-v2 overflow-h">
+						<h2 class="heading-xs pull-left"><i class="fa fa-bar-chart-o"></i> Task Progress</h2>
+						<a href="#"><i class="fa fa-cog pull-right"></i></a>
+					</div>
+					<h3 class="heading-xs">Web Design <span class="pull-right">92%</span></h3>
+					<div class="progress progress-u progress-xxs">
+						<div style="width: 92%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="92" role="progressbar" class="progress-bar progress-bar-u">
+						</div>
+					</div>
+					<h3 class="heading-xs">Unify Project <span class="pull-right">85%</span></h3>
+					<div class="progress progress-u progress-xxs">
+						<div style="width: 85%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" role="progressbar" class="progress-bar progress-bar-blue">
+						</div>
+					</div>
+					<h3 class="heading-xs">Sony Corporation <span class="pull-right">64%</span></h3>
+					<div class="progress progress-u progress-xxs margin-bottom-40">
+						<div style="width: 64%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="64" role="progressbar" class="progress-bar progress-bar-dark">
+						</div>
+					</div>
+
+					<hr>
+
+					<!--Notification-->
+					<div class="panel-heading-v2 overflow-h">
+						<h2 class="heading-xs pull-left"><i class="fa fa-bell-o"></i> Birthdays </h2>
+						<a href="#"><i class="fa fa-cog pull-right"></i></a>
+					</div>
+					<ul class="list-unstyled CustomScrollbar margin-bottom-20" data-mcs-theme="minimal-dark">
+						<li class="notification">
+							<i class="icon-custom icon-sm rounded-x icon-bg-red icon-line icon-envelope"></i>
+							<div class="overflow-h">
+								<span><strong>Albert Heller</strong> has sent you email.</span>
+								<small>Two minutes ago</small>
+							</div>
+						</li>
+						<li class="notification">
+							<img class="rounded-x" src="assets/img/testimonials/img6.jpg" alt="">
+							<div class="overflow-h">
+								<span><strong>Taylor Lee</strong> started following you.</span>
+								<small>Today 18:25 pm</small>
+							</div>
+						</li>
+						<li class="notification">
+							<i class="icon-custom icon-sm rounded-x icon-bg-yellow icon-line fa fa-bolt"></i>
+							<div class="overflow-h">
+								<span><strong>Natasha Kolnikova</strong> accepted your invitation.</span>
+								<small>Yesterday 1:07 pm</small>
+							</div>
+						</li>
+						<li class="notification">
+							<img class="rounded-x" src="assets/img/testimonials/img1.jpg" alt="">
+							<div class="overflow-h">
+								<span><strong>Mikel Andrews</strong> commented on your Timeline.</span>
+								<small>23/12 11:01 am</small>
+							</div>
+						</li>
+						<li class="notification">
+							<i class="icon-custom icon-sm rounded-x icon-bg-blue icon-line fa fa-comments"></i>
+							<div class="overflow-h">
+								<span><strong>Bruno Js.</strong> added you to group chating.</span>
+								<small>Yesterday 1:07 pm</small>
+							</div>
+						</li>
+						<li class="notification">
+							<img class="rounded-x" src="assets/img/testimonials/img6.jpg" alt="">
+							<div class="overflow-h">
+								<span><strong>Taylor Lee</strong> changed profile picture.</span>
+								<small>23/12 15:15 pm</small>
+							</div>
+						</li>
+					</ul>
+
+					<!--End Notification-->
+
+					<div class="margin-bottom-50"></div>
+
+					<!--Datepicker-->
+					<form action="#" id="sky-form2" class="sky-form">
+						<div id="inline-start"></div>
+					</form>
+					<!--End Datepicker-->
+
+
+
+					</div>
+
+
+
+                                    </div>
+				</div>
+
+
+
+                                    <div class="col-md-8">
+
+                                    <div class="row">
+					<div class="col-md-12">
+						<div class="callaction bg-gray">
+							<div class="row">
+								<div class="col-md-8">
+									<div class="wow fadeInUp" data-wow-delay="0.1s">
+									<div class="cta-text">
+									<h3> Welcome, ken</h3>
+									<p>You're looking at SpiceHRM, your new tool for work. Here's a quick look at some of the things you can do with SpiceHRM </p>
+									</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="wow lightSpeedIn" data-wow-delay="0.1s">
+										<div class="cta-btn">
+										<a href="#" class="btn btn-skin btn-lg" class="dropdown-toggle" data-toggle="dropdown">Get Started</a>
+                                                                                <ul class="dropdown-menu">
+                                                                                    <li> <a class="dropdown-item" href="#"><i class="fa fa-user-plus  icon-success"></i>New Employee</a></li>
+                                                                                        <div class="dropdown-divider"></div>
+                                                                                      <li> <a class="dropdown-item" href="#"><i class="fa fa-bar-chart-o   icon-success"></i>New Report</a></li>
+                                                                                      </ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+                                        <hr>
+
+                                <div class="row">
+                                 <div class="col-md-12">
+
+                                 <div class="callaction bg-gray">
+		                 <div class="row">
+				<div class="col-sm-3 col-md-3">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+
+							<i class="fa fa-bank fa-3x circled bg-skin"></i>
+                                                        <h4 class="h-bold" style="font-size: 15px;">Company Profile</h4>
+							<p style="font-size: 15px;">
+							 Update Company Information
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+
+							<i class="fa fa-users fa-3x circled bg-skin"></i>
+							<h4 class="h-bold" style="font-size: 15px;">Employee Directory</h4>
+							<p style="font-size: 15px;">
+							Search for coworkers and their contact info.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+							<i class="fa fa-folder-open-o fa-3x circled bg-skin"></i>
+							<h4 class="h-bold" style="font-size: 15px;">Documents</h4>
+							<p style="font-size: 15px;">
+							upload and filing away documents for safekeeping.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+
+							<i class="fa fa-balance-scale fa-3x circled bg-skin"></i>
+							<h4 class="h-bold" style="font-size: 15px;">Payroll </h4>
+							<p style="font-size: 15px;">
+							 calculate benefits, deductions, and create  first paycheck
+							</p>
+						</div>
+					</div>
+				</div>
+                                 </div>
+
+		                 <div class="row">
+				<div class="col-sm-3 col-md-3">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+
+							<i class="fa fa-calendar-o fa-3x circled bg-skin"></i>
+                                                        <h4 class="h-bold" style="font-size: 15px;">Time Attendance</h4>
+							<p style="font-size: 15px;">
+							tracking non-exempt employees
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+
+							<i class="fa fa-briefcase fa-3x circled bg-skin"></i>
+							<h4 class="h-bold" style="font-size: 15px;">Time Off</h4>
+							<p style="font-size: 15px;">
+							Request time off and check your balances.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+							<i class="fa fa-yelp fa-3x circled bg-skin"></i>
+							<h4 class="h-bold" style="font-size: 15px;">Hiring</h4>
+							<p style="font-size: 15px;">
+							Manage your job postings and applicants.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+
+							<i class="fa fa-bar-chart fa-3x circled bg-skin"></i>
+							<h4 class="h-bold" style="font-size: 15px;">Reports </h4>
+							<p>
+							View and create the reports you need.
+							</p>
+						</div>
+					</div>
+				</div>
+                                 </div>
+                                 </div>
+
+
+
+                                 </div>
+
+			</div>
+
+
+                                          <hr>
+
+                                <div class="row">
+                                 <div class="col-md-12">
+
+                                 <div class="callaction bg-gray">
+		                 <div class="row">
+                                     <h4 class="h-bold">Notifications</h4>
+				<div class="col-sm-3 col-md-12">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+
+							<i class="fa fa-check fa-3x circled bg-skin"></i>
+							<h4 class="h-bold">Make an appoinment</h4>
+							<p>
+							Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+
+                                 </div>
+                                 </div>
+                                 </div>
+
+			</div>
+
+                                               <hr>
+
+                                <div class="row">
+                                 <div class="col-md-12">
+
+                                 <div class="callaction bg-gray">
+		                 <div class="row">
+                                     <h4 class="h-bold">Reports</h4>
+				<div class="col-sm-3 col-md-12">
+					<div class="wow fadeInUp" data-wow-delay="0.2s">
+						<div class="box text-center">
+
+							<i class="fa fa-check fa-3x circled bg-skin"></i>
+							<h4 class="h-bold">Make an appoinment</h4>
+							<p>
+							Lorem ipsum dolor sit amet, nec te mollis utroque honestatis, ut utamur molestiae vix, graecis eligendi ne.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+
+                                 </div>
+                                 </div>
+                                 </div>
+
+			</div>
+
+
+
+                                    {{ Form::hidden('permission', '1', array('id' => 'permission')) }}
+
+
+                                    </div>
+				</div>
+                             @endpermission
+			</div>
+		</div>
+    </section>
+<script>
+    $(document).ready(function() {
+        var adminval = $('#permission').val();
+     if (adminval == null){
+        $.blockUI({message:'You are not allowed to view this page' , css: {
+            border: 'none',
+            padding: '15px',
+            backgroundColor: '#fff',
+            '-webkit-border-radius': '10px',
+            '-moz-border-radius': '10px',
+            opacity: .5,
+            color: '#FF0000'
+        } });
+       }
+
+       // setTimeout($.unblockUI, 2000);
+
+    });
+  </script>
+
+ @endsection
